@@ -1,0 +1,95 @@
+/* Nabiha Shah - 100874544 */
+/* CSS for Labs 7-8 */
+/*side bar*/
+.VPSidebar a:hover,
+.VPSidebar a.is-active,
+.VPSidebar .is-active a,
+.VPSidebar .is-active .text {
+  color: #13b38e !important;
+}
+
+/*top nav hover + active */
+.VPNavBar a:hover,
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active,
+.VPNavBarMenuGroup:hover .text,
+.VPNavBarMenuGroup.active .text {
+  color: #13b38e !important;
+}
+
+/*dropdown items */
+.VPFlyout a:hover,
+.VPMenu a:hover,
+.VPMenuLink a:hover {
+  color: #13b38e !important;
+}
+
+/*title gradient is green --> pink*/
+.VPHero .name {
+  background: linear-gradient(90deg, #13b38e 30%, #E225B6 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*image container align*/
+.VPHero .image-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*image size constraints*/
+.VPHero .image-container img {
+  max-width: 280px !important;
+  max-height: 280px !important;
+  position: relative;
+  z-index: 1;
+}
+
+/*image remove background element*/
+.VPHero .image-container::before {
+  display: none;
+}
+
+/*image layering fix*/
+.VPHero .image-container img {
+  max-width: 280px !important;
+  max-height: 280px !important;
+  position: relative;
+  z-index: 1;
+}
+
+/*image green and pink glow*/
+.VPHero .image-src {
+  box-shadow:
+    -45px 20px 90px rgba(19, 179, 142, 0.40),
+     45px 35px 95px rgba(217, 75, 184, 0.75);
+}
+
+/*give the primary button green theme*/
+.VPHero .VPButton.brand {
+  background-color: #13b38e !important;
+  border-color: #13b38e !important;
+  color: #ffffff !important;
+}
+
+/*primary button hovering */
+.VPHero .VPButton.brand:hover {
+  background-color: #0fa07e !important;
+  border-color: #0fa07e !important;
+}
+
+/*default style then hover on pink*/
+.VPHero .VPButton.alt {
+  background-color: #D3D3D3 !important;
+  border-color: var(--vp-c-divider) !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+.VPHero .VPButton.alt:hover {
+  background-color: #ee9bdd !important;
+  border-color: #ee9bdd !important;
+  color: #ffffff !important;
+}
